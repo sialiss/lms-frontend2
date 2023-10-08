@@ -1,0 +1,44 @@
+table {
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+table,
+th,
+td {
+  border: solid 2px;
+  border-collapse: collapse;
+  padding: 10px;
+}
+
+th {
+  background-color: rgb(136, 211, 234);
+  font-size: larger;
+}
+
+caption {
+  font-weight: bold;
+  font-size: larger;
+  padding: 10px;
+}
+
+tr td:nth-child(1) {
+  text-align: center;
+}
+
+tr td:nth-child(2) {
+  text-align: left;
+}
+
+tr td:nth-child(3) {
+  text-align: right;
+}
+
+tr:nth-of-type(odd) {
+  background-color: white;
+}
+
+tr:nth-of-type(even) {
+  background-color: rgb(190, 232, 245);
+}

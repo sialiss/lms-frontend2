@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Form</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="form.css" />
+  </head>
+  <body>
+    <form method="post" action="?command=save">
+      <div class="control-group">
+        <label>Имя любимого котёнка:<em>*</em></label>
+        <input type="text" name="name" placeholder="Silver Moon" required />
+      </div>
+
+      <div class="control-group">
+        <label>Пароль любимого котёнка:<em>*</em></label>
+        <input type="password" name="password" required />
+      </div>
+
+      <div class="control-group flex">
+        <label>Расскажите про вашу любовь к котятам:</label>
+        <div class="cat-container">
+          <textarea class="text-area" name="about" rows="5" cols="60"></textarea>
+        </div>
+      </div>
+
+      <div class="control-group">
+        <label>Ваше состояние:</label>
+        <input type="radio" name="state" value="0" checked />маленький котёночек &nbsp;
+        <input type="radio" name="state" value="1" />взрослый котик
+      </div>
+
+      <div class="control-group">
+        <label>Как часто вы думаете о котятках:</label>
+        <input type="radio" name="level" value="0" checked />каждый день &nbsp;
+        <input type="radio" name="level" value="1" />каждый час &nbsp;
+        <input type="radio" name="level" value="2" />каждую секунду
+      </div>
+
+      <div class="control-group">
+        <label>Любимая длина шерсти котяточек:</label>
+        <input type="checkbox" name="short" checked />Короткошёрстные
+        <input type="checkbox" name="smooth" />Гладкошёрстные
+        <input type="checkbox" name="long" />Длинношёрстные
+      </div>
+
+      <div class="control-group">
+        <label>Порода:</label>
+        <select name="breed" size="1">
+          <option value="breed1">Vampire</option>
+          <option value="breed2">Оранджевий</option>
+          <option value="breed3">Tuxedo</option>
+          <option value="breed4">Silly</option>
+        </select>
+      </div>
+
+      <div class="control-group">
+        <label>Любимая дата:</label>
+        <input type="date" name="date" value="2014-05-04" />
+      </div>
+
+      <div class="control-group">
+        <button type="submit">Сохранить</button>
+      </div>
+    </form>
+  </body>
+</html>
